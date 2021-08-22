@@ -31,7 +31,7 @@ const char user[] = "oi"; //Usuario
 const char pass[] = "oi"; //Senha
 
 // configuracoes do mqtt
-const char* broker = "2.tcp.ngrok.io";         //endereco do broker mqtt
+const char* broker = "6.tcp.ngrok.io";         //endereco do broker mqtt
 const char* topicOut = "mqtt_tcc/rastreio";    //Topico de saida do broker
 const char* topicIn = "mqtt_tcc/bloqueio";     //topico de entrada do broker
 
@@ -94,7 +94,7 @@ void setup()
     while(true);
   }
 
-  mqtt.setServer(broker, 10210);
+  mqtt.setServer(broker, 18059);
   mqtt.setCallback(mqttCallback);
 
   display.println("End. IP Rede GSM: ");
